@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Weso Mustafa - Ihr professioneller Malerbetrieb. Tapezieren, Streichen und Trockenbau mit höchster Qualität und Zuverlässigkeit.">
+    <meta name="description" content="Weso Mustafa - Professioneller Malerbetrieb. Tapezieren, Streichen und Trockenbau mit höchster Qualität.">
     <title>Weso Mustafa | Malerbetrieb</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background-color: #f5f5f5;
             color: #333;
         }
         header {
@@ -18,21 +18,16 @@
             color: #fff;
             padding: 20px;
             text-align: center;
-            position: relative;
         }
         header img {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 50px;
-        }
-        header h1 {
-            margin: 0;
+            width: 80px;
+            border-radius: 50%;
         }
         nav {
+            display: flex;
+            justify-content: center;
             background-color: #34495e;
-            padding: 10px;
-            text-align: center;
+            padding: 10px 0;
         }
         nav a {
             color: #fff;
@@ -51,7 +46,6 @@
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-            margin: 10px 0;
         }
         form {
             max-width: 600px;
@@ -67,7 +61,7 @@
             margin-bottom: 8px;
             font-weight: bold;
         }
-        form input, form textarea, form button, form select {
+        form input, form textarea, form button {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
@@ -91,37 +85,57 @@
             text-align: center;
             margin-top: 20px;
         }
-        .language-switch {
-            margin-top: 10px;
-            text-align: right;
-            padding: 10px 20px;
-        }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://via.placeholder.com/50" alt="Logo">
+        <img src="logo.png" alt="Logo von Weso Mustafa">
         <h1>Weso Mustafa | Ihr Malerbetrieb</h1>
         <p>Professionelle Malerarbeiten, Tapezieren und Trockenbau</p>
     </header>
-    <div class="container">
+    <nav>
+        <a href="#services">Leistungen</a>
+        <a href="#about">Über uns</a>
+        <a href="#contact">Kontakt</a>
+        <a href="#terms">Datenschutz</a>
+    </nav>
+    <div class="container" id="services">
         <h2>Unsere Leistungen</h2>
+        <p>Wir bieten Ihnen eine breite Palette an Dienstleistungen:</p>
         <div class="services">
-            <h3>Malerarbeiten</h3>
-            <img src="/mnt/data/OIP.jpeg" alt="Malerarbeiten">
-            <p>Wir bieten hochwertige Malerarbeiten für Innen- und Außenbereiche an.</p>
-
-            <h3>Tapezierarbeiten</h3>
-            <img src="/mnt/data/Tapezierarbeiten-02.jpeg" alt="Tapezierarbeiten">
-            <p>Perfekte Tapezierarbeiten, um Ihren Räumen neuen Glanz zu verleihen.</p>
-
-            <h3>Trockenbau</h3>
-            <img src="/mnt/data/image-designbuild3-1024x443.jpg" alt="Trockenbau">
-            <p>Professioneller Trockenbau für Ihre individuellen Raumgestaltungsideen.</p>
+            <img src="malerarbeiten.jpg" alt="Malerarbeiten">
+            <p>Malerarbeiten: Hochwertige Arbeiten für Innen- und Außenbereiche.</p>
+            <img src="tapezierarbeiten.jpg" alt="Tapezierarbeiten">
+            <p>Tapezierarbeiten: Perfekter neuer Look für Ihre Räume.</p>
+            <img src="trockenbau.jpg" alt="Trockenbau">
+            <p>Trockenbau: Individuelle Raumgestaltungsideen professionell umgesetzt.</p>
         </div>
     </div>
+    <div class="container" id="about">
+        <h2>Über uns</h2>
+        <p>Weso Mustafa steht für Qualität und Zuverlässigkeit. Mit jahrelanger Erfahrung bieten wir erstklassige Dienstleistungen rund ums Tapezieren, Streichen und Trockenbau. Ihre Zufriedenheit ist unser Antrieb.</p>
+    </div>
+    <div class="container" id="contact">
+        <h2>Kontakt</h2>
+        <p>Rufen Sie uns an unter <a href="tel:+4917632623593">+49 176 32623593</a> oder schreiben Sie uns eine E-Mail an <a href="mailto:infowesoalsbau@gmail.com">infowesoalsbau@gmail.com</a>.</p>
+        <form action="https://formspree.io/f/xayzabvd" method="POST">
+            <label for="name">Ihr Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Ihre E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Ihre Nachricht:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="zip">Ihre Postleitzahl:</label>
+            <input type="text" id="zip" name="zip" required>
+            <label for="project">Projektbeschreibung (optional):</label>
+            <textarea id="project" name="project" rows="3"></textarea>
+            <label for="file">Projektbilder hochladen:</label>
+            <input type="file" id="file" name="file" multiple>
+            <button type="submit">Nachricht senden</button>
+        </form>
+    </div>
     <footer>
-        <p>&copy; 2024 Weso Mustafa. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2024 Weso Mustafa. Alle Rechte vorbehalten. <a href="#terms">Datenschutz</a> | <a href="#agb">AGBs</a></p>
     </footer>
 </body>
 </html>
